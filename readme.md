@@ -42,3 +42,7 @@ for i, suit:=rangecardSuits {
 you'll notice i and j here they were the index of every suit in value in both those slices. but we never have to actually use these indices at any point for putting this slice of cards together.
 
 * whenever you have some variable that you don't actually have to use , we always replace it with underscore which tells go, hey , we understand that there is a variable here , we just don't care about it and we don't want to use it.
+
+Slice Range Syntax:
+
+cards[:3]
