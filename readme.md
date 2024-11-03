@@ -6,7 +6,6 @@ Slice: an array that can grow or shrink
 
 Go is not an object oriented programming language, so there's no idea classes inside of Go.
 
-
 ```go
 type deck []string
 func (d deck) print() {  
@@ -19,7 +18,7 @@ func (d deck) print() {
 
 d is a reference to cards array
 
-if we were working with any other type of language specifically , like if we were working with Python , Ruby , js 
+if we were working with any other type of language specifically , like if we were working with Python , Ruby , js
 
 you could think this d receiver variable as being very similar to the word this or the word self.
 
@@ -46,3 +45,17 @@ you'll notice i and j here they were the index of every suit in value in both th
 Slice Range Syntax:
 
 cards[:3]
+
+`newPosition:=rand.Intn(len(d) -1)`
+
+The random number generator that we have right here is what is we refer to as a pseudo random generator.
+
+Go by default , uses a random number generator that depends upon some **seed value.**
+
+you can imagine the seed value as being kind of like the source of randomness inside of our number generator.
+
+we take the seed value , we pass in the generator , and then the generator is used to make a random sequence of numbers or values or whatever we're randomizing.
+
+Create a go module
+
+`$>go mod init cards`
