@@ -59,3 +59,15 @@ we take the seed value , we pass in the generator , and then the generator is us
 Create a go module
 
 `$>go mod init cards`
+
+Testing in Go:
+
+Go testing is not RSpec, mocha, jasmine , selenuim , etc !
+
+To make a test , create a new file ending in _test.go
+
+deck_test.go
+
+to run all tests in a package , run the command
+
+go test
